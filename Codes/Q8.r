@@ -26,6 +26,7 @@ plotOutput(outputId = "distPlot")
 )
 # ---------------------------------------------------
 #Coding for server.R :
+
 # Define server logic required to draw a histogram ----
 server <- function(input, output) {
 # Histogram of Geyser Data ----
