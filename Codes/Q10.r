@@ -16,7 +16,7 @@ trainSet <- trainSet[, -trainColNum]
 testSet <- testSet[, -trainColNum]
 treeFit <- rpart(Species~.,data=trainSet,method = 'class')
 print(treeFit)
-#DECISION TREE BEFORE PRUNING
+#BEFORE PRUNING
 rpart.plot(treeFit, box.col=c("yellow", "red"))
 Prediction1 <- predict(treeFit,newdata=testSet[-5],type = 'class')
 library(caret)
